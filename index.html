@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/1edfa6821d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Santiago</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" id="btn-menu" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!--SECCIÓN DE INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img
+            src="images/Foto_Quipux.png"
+            alt="Foto de Santiago Aristizabal"
+          />
+        </div>
+        <h1>SANTIAGO ARISTIZABAL</h1>
+        <h2>Desarrollador de software - Desarollador web</h2>
+        <div class="redes">
+          <a href="https://www.facebook.com/Rattlehead1809" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/santiago-aristizabal-989027279/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/Santiago1809" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=aristizabalsantiago482@gmail.com"
+            target="_blank"
+            ><i class="fa-brands fa-google"></i
+          ></a>
+          <a href="wa.me/+573015253814" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre mi</h2>
+        <p>
+          <span>Hola, soy Santiago Aristizabal</span>Soy desarrollador de
+          software enfocado al desarrollo web. tengo
+          <span id="edad"></span> años y soy apasionado por la tecnología y la
+          música.
+        </p>
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                18-09-2003
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                +57 301 535 3814
+              </li>
+              <li>
+                <strong>Email</strong>
+                aristizabalsantiago482@gmail.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Carrera 81c #49f-50 int. 402, Medellín, Antioquia.
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                FREELANCE
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MÚSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-shield-cat"></i>
+                <span>ANIMALES</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LECTURA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJES</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-bowl-food"></i>
+                <span>COMIDA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-code"></i>
+                <span>TECNOLOGÍA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-motorcycle"></i>
+                <span>MOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="asset/CV_Santiaago_Aristizabal.pdf" download>
+          <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </button>
+        </a>
+      </div>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Python</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Bases de datos</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>81%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Frameworks javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>99%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Puntualidad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Técnica en desarrollo de software</h4>
+              <span class="casa">Servicio Nacional de Aprendizaje SENA</span>
+              <div class="fecha">2022- 2023</div>
+              <p>
+                Aprendizaje de desarrollo enfocado a la web, además de formación
+                en lenguajes como C# y Python.
+              </p>
+              <div class="conectori">
+                <div class="curriculoi"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col derecha">
+            <h3>Experiencia</h3>
+            <div class="item izq">
+              <h4>Quipux S.A.S</h4>
+              <span class="casa">Practicante en desarrollo de software</span>
+              <div class="fecha">2022- 2023</div>
+              <p>
+                Aprendizaje de desarrollo de apis en Java y aprendizaje de git.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="images/ecommercepng.png" alt="Ecomerce en Angular 14" />
+            <div class="overlay">
+              <h3>Ecommerce en Angular 14</h3>
+              <p>
+                Ejemplo práctico de suscripciones y fetching de datos en angular
+              </p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="images/remover_fondos.png"
+              alt="Remover fondos en Svelte"
+            />
+            <div class="overlay">
+              <h3>Remover fondos de imagenes</h3>
+              <p>
+                Ejemplo práctico de subida de archivos y envio de archivos en
+                Svelte
+              </p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="images/tic_tac_toe.png" alt="Tic Tac Toe en React" />
+            <div class="overlay">
+              <h3>Tic Tac Toe en React</h3>
+              <p>
+                Ejemplo práctico de uso de los hooks useState y useEffect en
+                React, además del uso del localStorage
+              </p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="https://github.com/Santiago1809/Vue-and-flask-todoapp/raw/main/public/img/loguin.png"
+              alt="App de notas en Vue y en flask"
+            />
+            <div class="overlay">
+              <h3>App de notas en Vue y en Flask</h3>
+              <p>
+                Ejemplo práctico de uso de Flask (Python) en desarrollo backend
+                para hacer apis; y uso de VueJs y Tailwindcss para el frontend
+              </p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="https://github.com/Santiago1809/flask_crud/raw/main/public/index_page.png"
+              alt="Crud en Flask"
+            />
+            <div class="overlay">
+              <h3>Agenda de contactos en Flask</h3>
+              <p>
+                Ejemplo práctico de uso de Flask (Python) en desarrollo backend
+                para hacer apis; y uso de Jinja para el frontend
+              </p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="https://github.com/Santiago1809/ExpensesTrackerReact/raw/main/src/assets/image.png"
+              alt="Expense tracker"
+            />
+            <div class="overlay">
+              <h3>Expense tracker en React</h3>
+              <p>
+                Ejemplo práctico de uso de el uso de useContext, useState y
+                useEffect
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <form method="POST">
+              <input type="text" placeholder="Tú Nombre" id="nombre_user" />
+              <input
+                type="text"
+                placeholder="Número telefónico"
+                id="telefono_user"
+              />
+              <input
+                type="text"
+                placeholder="Dirección de correo"
+                id="correo"
+              />
+              <input type="text" placeholder="Tema" id="tema_user" />
+              <textarea
+                name=""
+                id="text_user"
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea>
+              <p id="succes-btn" class="succes-btn">Enviado con éxito!</p>
+              <button type="submit">
+                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Calazans, Medellín, Antioquia
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamame: +57 (301)525 3814
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: aristizabalsantiago482@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://www.facebook.com/Rattlehead1809" target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/santiago-aristizabal-989027279/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/Santiago1809" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=aristizabalsantiago482@gmail.com"
+          target="_blank"
+          ><i class="fa-brands fa-google"></i
+        ></a>
+        <a href="wa.me/+573015253814" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="dist/bundle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
