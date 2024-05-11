@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Actualmente",
+    title: "Freelance",
+    company: "N/A",
+    description:
+      "Durante esta etapa, me enfrenté a diversos desafíos con Flask, donde, por ejemplo, tuve la oportunidad de asumir el reto de construir un chat en tiempo real. También desarrollé sistemas de programación de citas para un taller de reparación de dispositivos con el stack MERN, así como un sitio web para una empresa inmobiliaria.",
+  },
+  {
+    date: "Noveiembre 2022",
+    title: "Analista Desarrollador",
+    company: "Quipux S.A.S",
+    description:
+      "En esta etapa, estaba realizando mi pasantía profesional donde tuve que enfrentar diferentes desafíos con frameworks como SpringBoot, Vue y AngularJS. Participé en procesos donde tuve que crear endpoints en las APIs internas de las aplicaciones, consumir esas APIs, consumir servicios SOAP y convertirlos a servicios de API REST. Algunas de las aplicaciones donde estuve desarrollando son: una aplicación de envío de mensajes SMS, una aplicación integradora de servicios SOAP y servicios REST API. Enfrenté retos como migrar aplicaciones monolíticas a infraestructura de microservicios",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map((exp) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...exp} />
+      </li>
+    ))
+  }
+</ol>
