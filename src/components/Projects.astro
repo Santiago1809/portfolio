@@ -4,7 +4,8 @@ import NextJS from "./Icons/NextJS.astro";
 import Tailwind from "./Icons/Tailwind.astro";
 import LinkButton from "./LinkButton.astro";
 import VueJS from "./Icons/VueJS.astro";
-
+import Go from "./Icons/Go.astro";
+import React from "./Icons/React.astro";
 const TAGS = {
   NEXT: {
     name: "Next.js",
@@ -21,16 +22,33 @@ const TAGS = {
     class: "bg-[#64b330] text-white",
     icon: VueJS,
   },
+  GO: {
+    name: "Go",
+    class: "bg-[#00ADD8] text-white",
+    icon: Go,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-[#61DA82] text-black",
+    icon: React,
+  },
 };
 const PROJECTS = [
   {
     title: "Vue-Flask ToDo App",
-    image:
-      "https://github.com/Santiago1809/Vue-and-flask-todoapp/raw/main/public/img/loguin.png",
+    image: "/projects/VueNotes.png",
     description:
       "Ejemplo práctico de una aplicación de notas donde puedes agrupar tus notas en grupos y realizar las operaciones básicas CRUD, además de tener inicio de sesión y registro.",
     tags: [TAGS.VUE, TAGS.TAILWIND],
     github: "https://github.com/Santiago1809/Vue-and-flask-todoapp",
+  },
+  {
+    title: "Json to parser to Class",
+    image: "/projects/JsonParser.png",
+    description:
+      "Convierte un JSON en una clase de TypeScript, Go, Dart, Python, Java, C# y C++, entre otros.",
+    tags: [TAGS.GO, TAGS.REACT],
+    github: "https://github.com/Santiago1809/interface_parser",
   },
 ];
 ---
