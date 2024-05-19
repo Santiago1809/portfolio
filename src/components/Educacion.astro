@@ -1,0 +1,29 @@
+---
+import EducacionItem from "./EducacionItem.astro";
+const EDUCATION = [
+  {
+    degree: "Ingeniería de Software",
+    institute: "Tecnológico de Antioquia - Institución Universitaria",
+    startYear: "Febrero 2024",
+    endYear: "la actualidad",
+    location: "Medellín, Colombia",
+  },
+  {
+    degree: "Técnico en Desarrollo de Software",
+    institute: "Servicio Nacional de Aprendizaje - SENA",
+    startYear: "Febrero 2022",
+    endYear: "Mayo 2023",
+    location: "Medellín, Colombia",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EDUCATION.map((ed) => (
+      <li class="mb-10 ms-4">
+        <EducacionItem {...ed} />
+      </li>
+    ))
+  }
+</ol>
